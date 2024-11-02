@@ -58,7 +58,7 @@ function SorteoCard({ estadoContrato, isConnected }) {
       .reduce((acc, num) => acc + num, 0);
 
     if (fisSuccess && sumaTotal > 0 && winnersAddress) {
-      alert(`Se finalizó el sorteo. Ganadores números: [${numerosGanadores}]. hubo [${winnersAddress.length}] ganadores`);
+      alert(`Se finalizó el sorteo. Ganadores números: [${numerosGanadores}].`);
       let numerosOrdenados = [...numerosGanadores].sort((a, b) => a - b);
       console.log('winnersAddress',winnersAddress);
       axios.put(`${window.URL_BACKEND}/sorteos/finalizar`, {

@@ -3,6 +3,7 @@
 
 Este proyecto es una aplicación de lotería descentralizada creada en Solidity utilizando Hardhat para el desarrollo de contratos inteligentes. El sistema se compone de varios componentes principales: el backend en Node.js con Express que interactúa con una base de datos MySQL, el frontend en React que utiliza `wagmi` para conectarse al contrato inteligente y el sistema de contenedores Docker para simplificar la infraestructura del proyecto.
 
+
 ## Estructura del Proyecto
 
 La estructura del proyecto está dividida en los siguientes directorios principales:
@@ -31,6 +32,8 @@ cd utn-diplo
 ## Puesta en Marcha del Proyecto Completo
 
 Para levantar el proyecto completo y todos sus componentes (backend, frontend, base de datos y contrato inteligente), sigue estos pasos:
+
+![Esquema del proyecto](excalidraw_esquema.png)
 
 ### 1. Construir e Iniciar el Proyecto
 
@@ -75,12 +78,16 @@ Si deseas trabajar con cada componente por separado (backend, frontend o contrat
 
 Cada uno contiene instrucciones detalladas sobre cómo ejecutar las partes individuales sin Docker.
 
+
 ## Notas Finales
 
 Este proyecto utiliza Docker para simplificar la configuración del entorno. Si no estás familiarizado con Docker, los comandos proporcionados (`docker-compose up --build` y `docker-compose down`) son los únicos que necesitas para ejecutar y detener todo el sistema sin problemas.
 
 Para más detalles sobre cómo interactuar con los contratos inteligentes, cómo funciona la API del backend o cómo se gestionan los datos de la lotería, consulta la documentación en los directorios respectivos.
 
+## Video DEMO
+
+[![Watch the video](https://img.youtube.com/vi/RA_ZpKe6_jQ/maxresdefault.jpg)](https://youtu.be/RA_ZpKe6_jQ)
 
 ## Authors 
 

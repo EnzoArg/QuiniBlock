@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: mysqldb
--- Tiempo de generación: 01-10-2024 a las 22:25:29
+-- Tiempo de generación: 29-10-2024 a las 01:48:08
 -- Versión del servidor: 9.0.1
 -- Versión de PHP: 8.2.8
 
@@ -75,7 +75,8 @@ INSERT INTO `errorMessage` (`tx_id`, `error`) VALUES
 (302, 'The contract function \"purchaseTicket\" reverted with the following reason:\nInternal JSON-RPC error.'),
 (306, 'User rejected the request.'),
 (314, 'The contract function \"purchaseTicket\" reverted with the following reason:\nInternal JSON-RPC error.'),
-(317, 'User rejected the request.');
+(317, 'User rejected the request.'),
+(330, 'The contract function \"purchaseTicket\" reverted with the following reason:\nInternal JSON-RPC error.');
 
 -- --------------------------------------------------------
 
@@ -130,7 +131,11 @@ INSERT INTO `sorteos` (`id`, `fechaInicio`, `fechaFin`, `numerosGanadores`, `poz
 (30, '2024-10-01 00:12:17', '2024-10-01 00:13:15', '[1,2,3,4,5,6]', 0.0135, 0, 108),
 (31, '2024-10-01 00:14:35', '2024-10-01 00:15:44', '[5,15,21,26,37,44]', 0.0135, 1, 109),
 (32, '2024-10-01 00:18:45', '2024-10-01 00:19:43', '[1,2,25,41,44,45]', 0.0135, 0, 110),
-(33, '2024-10-01 00:22:28', '2024-10-01 00:23:29', '[6,12,18,19,23,36]', 0.0135, 0, 111);
+(33, '2024-10-01 00:22:28', '2024-10-01 00:23:29', '[6,12,18,19,23,36]', 0.0135, 0, 111),
+(34, '2024-10-29 00:01:53', '2024-10-29 00:10:06', '[7,14,19,22,34,39]', 0.017, 1, 113),
+(35, '2024-10-29 01:03:05', '2024-10-29 01:04:37', '[1,17,18,26,32,35]', 0.017, 0, 113),
+(36, '2024-10-29 01:11:38', '2024-10-29 01:16:44', '[1,2,3,4,5,6]', 0.024, 0, 115),
+(37, '2024-10-29 01:27:29', '2024-10-29 01:32:37', '[8,15,19,23,39,44]', 0.017, 1, 117);
 
 -- --------------------------------------------------------
 
@@ -258,7 +263,14 @@ INSERT INTO `ticketsvendidos` (`id`, `tx_hash`, `numeros_elegidos`, `fecha`, `so
 (322, '0x266e77062b41662bfc6e44b5d0d9f94fa8cfe95710412a9a859629104af0fb4f', '[1,2,3,4,5,6]', '2024-10-01 00:12:27', 30, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 108),
 (323, '0x9a60aa3151febda2bfb3ccb7879a95ca0451d83629ec39c93f7a21517e9b7328', '[5,15,21,26,37,44]', '2024-10-01 00:14:40', 31, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 109),
 (324, '0x45a1be6ebe6893207e58412fd468eee1f0c6999bea6e49d5fcdbb59415f79c75', '[1,2,25,41,44,45]', '2024-10-01 00:18:52', 32, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 110),
-(325, '0x7b1e1d209b9a9fce50324dc311d612243e24e0f1d1a26b033854990d44f6e890', '[6,12,18,19,23,36]', '2024-10-01 00:22:36', 33, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 111);
+(325, '0x7b1e1d209b9a9fce50324dc311d612243e24e0f1d1a26b033854990d44f6e890', '[6,12,18,19,23,36]', '2024-10-01 00:22:36', 33, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 111),
+(326, '0xbf11c9c3d37dd911d56e7ca2f27e7a54fb905b9841fa8f8c4f65df0530d8078f', '[1,2,3,4,5,6]', '2024-10-29 00:03:09', 34, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 112),
+(327, '0xf1dc37ac8e208aa8bb3dca419580461bf75b33b027d4a7a755538db1db4d20bd', '[10,13,31,34,41,43]', '2024-10-29 00:05:12', 34, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 113),
+(328, '0x0639d876e9accaac90de483d5ff82ba470b52a3e1992e16a1b43a9c8517bddd0', '[1,2,3,4,5,6]', '2024-10-29 01:13:06', 36, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 114),
+(329, '0x5d4df041c54ad1a135da1d8bbe9062d0c10933afaeb6ee00c28d95175d74079d', '[1,12,16,17,23,44]', '2024-10-29 01:15:02', 36, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 115),
+(330, NULL, '[7,25,35,36,37,45]', '2024-10-29 01:28:12', 37, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'fallida', NULL),
+(331, '0x876d740386b807454011fc0d229b841e214cc2ed2755abfbbee730e92bbdc14b', '[8,15,19,23,39,44]', '2024-10-29 01:28:33', 37, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 116),
+(332, '0x759d8ddc120ffa52210be36674479d6f2d4f2a4a2e859c3e517f46aaad64a2f6', '[2,20,35,36,39,42]', '2024-10-29 01:30:37', 37, '0x967B2384c4316Ad022EF9973620F3385aFeE58AA', 'confirmada', 117);
 
 --
 -- Índices para tablas volcadas
@@ -291,13 +303,13 @@ ALTER TABLE `ticketsvendidos`
 -- AUTO_INCREMENT de la tabla `sorteos`
 --
 ALTER TABLE `sorteos`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de la tabla `ticketsvendidos`
 --
 ALTER TABLE `ticketsvendidos`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=326;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=333;
 
 --
 -- Restricciones para tablas volcadas
