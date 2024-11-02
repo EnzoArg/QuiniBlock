@@ -25,8 +25,8 @@ Cada directorio (backend, frontend y hardhat) contiene su propio archivo `README
 Para comenzar, clona la última versión del repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/santitesta/utn-diplo.git
-cd utn-diplo
+git clone https://github.com/EnzoArg/QuiniBlock.git
+cd QuiniBlock
 ```
 
 ## Puesta en Marcha del Proyecto Completo
