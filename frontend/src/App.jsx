@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="play" element={<Play />} />
-          {/* <Route path="memberships" element={<MemberShips />} /> Funcionalidad FUTURA */} 
+          <Route path="memberships" element={<MemberShips />} /> Funcionalidad FUTURA 
           <Route path="admin" element={<Admin />} />
           <Route path="history" element={<History />} />
           <Route path="*" element={<Navigate to="/" />} />

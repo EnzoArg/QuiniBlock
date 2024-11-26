@@ -14,7 +14,7 @@ function CardMemberShips(props) {
         </Card.Text>
 
         <Button variant="primary" href={props.ghLink} target="_blank">
-          Comprar ({props.price})
+          {props.button} {props.price?? (props.price)}
         </Button>
       </Card.Body>
     </Card>
@@ -28,6 +28,7 @@ CardMemberShips.propTypes = {
   description: PropTypes.string.isRequired,
   ghLink: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
+  button: PropTypes.string.isRequired,
 };
 
 export default CardMemberShips;

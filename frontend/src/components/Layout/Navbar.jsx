@@ -93,7 +93,6 @@ function NavBar() {
                 </Nav.Link>
               </Nav.Item>
             }
-            {/* FUNCIONALIDAD FUTURA
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -102,7 +101,7 @@ function NavBar() {
               >
                 <AiFillIdcard  style={{ marginBottom: "2px" }} /> Membresias
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item> 
             {/* AL CONECTARME VEO EL HISTORIAL */}
             {isConnected &&
               <Nav.Item>

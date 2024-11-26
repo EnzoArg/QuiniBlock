@@ -1,0 +1,11 @@
+.nav-tabs{
+    border-bottom: 0rem!important
+}
+button.nav-link{ 
+    height: auto !important;
+    padding: 0.2rem 1rem !important;
+    color: white !important;
+}
+button.nav-link.active{ 
+    color: var(--imp-text-color) !important
+}
